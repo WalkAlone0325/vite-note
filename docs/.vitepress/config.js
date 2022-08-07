@@ -35,6 +35,7 @@ export default defineConfig({
       { text: "工具篇", link: "/util/index", activeMatch: "/util/" },
       { text: "Guide", link: "/guide/index", activeMatch: "/guide/" },
       { text: "Configs", link: "/configs/index", activeMatch: "/config/" },
+      { text: "About", link: "/about/index", activeMatch: "/about/" },
     ],
 
     sidebar: {
