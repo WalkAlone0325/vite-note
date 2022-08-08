@@ -54,6 +54,7 @@ export default defineConfig({
           items: [
             { text: "Mac 开发环境配置", link: "/util/mac-utils" },
             { text: "Linux 常用命令", link: "/util/linux" },
+            { text: "Vi 常用命令", link: "/util/vi" },
           ],
         },
       ],
