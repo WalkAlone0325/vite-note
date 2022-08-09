@@ -38,7 +38,7 @@
 
 ## VPN
 
-1. 花钱：`https://panel.sakura-cat.club/#/register?code=EXAVT2nl`
+1. 花钱：`https://panel.sakura-cat.club/#/register`
 2. 花钱：`https://okz2.xyz/#/plan/22`
 3. 每日订阅： `https://maoy.cc/mfdy`
 
