@@ -97,13 +97,55 @@ ZSH_THEME="robbyrussell"
     `source .zshrc`
 
 
+## 安装 nvm
+
+`brew install nvm`
+
+::: tip
+配置 `node` 镜像源 
+```sh
+### nvm
+export NVM_DIR="$HOME/.nvm"
+  [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
+  [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
+
+### 镜像
+# 淘宝源
+export NVM_NODEJS_ORG_MIRROR=https://npmmirror.com/mirrors/node
+export NVM_IOJS_ORG_MIRROR=https://npmmirror.com/mirrors/npm
+```
+:::
+
+## 使用 nvm 安装 node
+
+::: tip
+
+安装最新稳定版：
+`nvm install --lts`
+
+安装指定版本：
+`nvm install 14.16.0`
+
+:::
+
+## 使用 brew 安装 yarn 和 pnpm
+
+::: tip
+
+安装 yarn：
+`brew install yarn`
+
+安装 pnpm：
+`brew install pnpm`
+
+:::
 
 ## 安装 VSCode
 
 官网：[https://code.visualstudio.com/Download](https://code.visualstudio.com/Download)
 
 ::: danger
-注意下载版本，下载后直接拖入应用程序中
+注意下载对应版本，下载后直接拖入应用程序中
 :::
 
 ## 配置常用别名(.zshrc)

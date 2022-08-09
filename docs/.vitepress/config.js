@@ -45,7 +45,7 @@ export default defineConfig({
           text: '开始',
           collapsible: true,
           items: [
-            { text: '指引', link: '/util/index' },
+            { text: '合集', link: '/util/total' },
             { text: 'VSCode 设置', link: '/util/vscsetting' }
           ]
         },
