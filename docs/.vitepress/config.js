@@ -34,9 +34,10 @@ export default defineConfig({
 
     nav: [
       { text: '工具篇', link: '/util/index', activeMatch: '/util/' },
-      { text: 'Guide', link: '/guide/index', activeMatch: '/guide/' },
-      { text: 'Configs', link: '/configs/index', activeMatch: '/config/' },
-      { text: 'About', link: '/about/index', activeMatch: '/about/' }
+      { text: '计划', link: '/plan/index', activeMatch: '/plan/' },
+      { text: '起步', link: '/guide/index', activeMatch: '/guide/' },
+      { text: '配置', link: '/configs/index', activeMatch: '/config/' },
+      { text: '关于', link: '/about/index', activeMatch: '/about/' }
     ],
 
     sidebar: {
@@ -56,6 +57,16 @@ export default defineConfig({
             { text: 'Mac 开发环境配置', link: '/util/mac-utils' },
             { text: 'Linux 常用命令', link: '/util/linux' },
             { text: 'Vi 常用命令', link: '/util/vi' }
+          ]
+        }
+      ],
+      'guide/': [
+        {
+          text: '开始',
+          collapsible: true,
+          items: [
+            { text: '起步', link: '/guide/quick-start' },
+            { text: '配置', link: '/guide/config' }
           ]
         }
       ]
