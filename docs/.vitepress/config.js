@@ -35,6 +35,7 @@ export default defineConfig({
     nav: [
       { text: '工具篇', link: '/util/index', activeMatch: '/util/' },
       { text: '计划', link: '/plan/index', activeMatch: '/plan/' },
+      { text: '源码', link: '/source/index', activeMatch: '/source/' },
       { text: '起步', link: '/guide/index', activeMatch: '/guide/' },
       { text: '配置', link: '/configs/index', activeMatch: '/config/' },
       { text: '关于', link: '/about/index', activeMatch: '/about/' }
@@ -68,6 +69,13 @@ export default defineConfig({
             { text: '起步', link: '/guide/quick-start' },
             { text: '配置', link: '/guide/config' }
           ]
+        }
+      ],
+      '/source/': [
+        {
+          text: 'Vue3 源码解析',
+          collapsible: true,
+          items: [{ text: '总体流程', link: '/source/vue-source' }]
         }
       ]
     }
