@@ -141,7 +141,7 @@
 ## 安装 DBeaver
 
 1. 安装 DBeaver 官网：[https://dbeaver.io/](https://dbeaver.io/)
-2. github 地址：
+2. github 地址：[https://github.com/dbeaver/dbeaver](https://github.com/dbeaver/dbeaver)
 
 ## 安装 Redis
 
