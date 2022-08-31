@@ -1,4 +1,12 @@
-## layout: 'doc' (default)
+## 疯狂星期四
 
-1. `doc-before` 文章内容之前
-2. `doc-after` 文章内容之后
+```js
+if (new Date().getDay() === 4) {
+ console.error('KFC Crazy Thursday need 50$.')
+ console.log(`
+ ⢠⠤⠴⠤⠤⠄  ⡢⡂⠒⢲⠒⠂  ⢰⣒⣒⣒⣲⠄  ⢴⠤⡦⢰⠒⡆  ⡖⢲⠒⢲⠒⡆
+ ⣹⢸⢍⢉⢽⠄  ⡠⡇⠤⢼⠤⠄  ⢸⣒⣲⣒⣚⠄  ⢸⠭⡇⢸⣉⡇  ⡇⡸⠄⢸⣀⡇
+ ⡜⡸⠔⠑⠜⡄  ⢄⠇⣀⣸⣀⡀  ⣑⣒⣺⣒⣒⡀  ⡩⠉⢍⡜⢀⡇  ⣏⣀⣀⣀⣀⡇
+ `)
+}
+```
