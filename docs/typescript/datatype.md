@@ -182,7 +182,7 @@ interface D extends Date {}
 
 ## ** type 和 interface 的关系和区别
 
-![type和interface](/type和interface.png)
+![type和interface](/interface.png)
 
 
 ::: tip
