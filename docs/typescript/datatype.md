@@ -77,7 +77,7 @@ const ws: WeakSet<string[]> = new WeakSet()
 
 ## unknow 和 any
 
-> unknow 定义的时候不知道的类型，使用时具体给定，可以使用 as，会自己判断类型
+> unknow 定义的时候不知道的类型，使用时具体给定，可以使用 as，会自己判断类型。**所有类型的联合**
 
 > any 任何类型
 

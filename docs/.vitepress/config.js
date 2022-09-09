@@ -91,7 +91,8 @@ export default defineConfig({
           collapsible: true,
           items: [
             { text: '基础知识', link: '/typescript/basic' },
-            { text: '数据类型', link: '/typescript/datatype' }
+            { text: '数据类型', link: '/typescript/datatype' },
+            { text: '高级类型', link: '/typescript/hightype' }
           ]
         }
       ]
