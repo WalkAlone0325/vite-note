@@ -36,6 +36,11 @@ export default defineConfig({
       { text: '工具篇', link: '/util/index', activeMatch: '/util/' },
       { text: '计划', link: '/plan/index', activeMatch: '/plan/' },
       { text: '源码', link: '/source/index', activeMatch: '/source/' },
+      {
+        text: 'TypeScript',
+        link: '/typescript/index',
+        activeMatch: '/typescript/'
+      },
       { text: '起步', link: '/guide/index', activeMatch: '/guide/' },
       { text: '配置', link: '/configs/index', activeMatch: '/config/' },
       { text: '关于', link: '/about/index', activeMatch: '/about/' }
@@ -78,6 +83,16 @@ export default defineConfig({
           text: 'Vue3 源码解析',
           collapsible: true,
           items: [{ text: '总体流程', link: '/source/vue-source' }]
+        }
+      ],
+      '/typescript/': [
+        {
+          text: 'TypeScript',
+          collapsible: true,
+          items: [
+            { text: '基础知识', link: '/typescript/basic' },
+            { text: '数据类型', link: '/typescript/datatype' }
+          ]
         }
       ]
     }
