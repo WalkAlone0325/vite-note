@@ -4,7 +4,7 @@
 
 > Js：`null` `undefined` `string` `number` `boolean` `bigint` `Symbol` `Object` (`Array`、`Function`、`Date` ...)
 
-> Ts：`以上所有` `void` `nerver` `enum` `unknow` `any` `自定义类型 interface、type` 
+> Ts：`以上所有` `void` `never` `enum` `unknow` `any` `自定义类型 interface、type` 
 
 ## 用 类型签名 和 Record 描述对象
 
@@ -74,3 +74,124 @@ const wm: WeakMap<{name: string}, number> = new WeakMap()
 const s: Set<number> = new Set()
 const ws: WeakSet<string[]> = new WeakSet()
 ```
+
+## unknow 和 any
+
+> unknow 定义的时候不知道的类型，使用时具体给定，可以使用 as，会自己判断类型
+
+> any 任何类型
+
+## never
+
+> never 不是用来声明的，而是用来进行推断的
+
+```ts
+type A = string | number
+
+const a: A = 'hello' as any
+
+if(typeof a === 'string') {
+  a.split('')
+} else if(typeof a === 'number') {
+  a.toFixed(2)
+} else {
+  // a 此处 a 的类型是 never
+  console.log('没了')
+}
+```
+
+## enum 类型
+
+```ts
+enum A = {
+  todo = 0,
+  done,
+  archived,
+  deleted
+}
+
+let status = 0
+status = A.todo
+```
+
+```ts
+// 权限 位运算
+enum Permission {
+  None = 0,                     // 0000
+  Read = 1 << 0,                // 0001
+  Write = 1 << 1,               // 0010
+  Delete = 1 << 2,              // 0100
+  Manage = Read | Write | Delete // 0111
+}
+
+type User {
+  permission: Permission
+}
+
+const user: User = {
+  permission: 0b0101
+}
+
+if((user.permission & Permission.Write) === Permission.Write) {
+  console.log('拥有 Write 权限')
+}
+```
+
+## type 和 interface
+
+> 什么时候都可以用 type
+> type：类型别名 Type Aliaes （给其它类型取个名字）
+
+```ts
+type Name = string
+type FalseLike = 0 | false | null | undefined | ''
+type Point = {x: number; y: number}
+type Points = Point[]
+type Line = [Point, Point]
+type Circle = { center: Point, radius: number}
+type Fn = (a: number) => number
+type FnWithProps = {
+  (a: number): number // 函数
+  prop1: number
+}
+```
+
+> 声明接口
+> interface: 描述对象的属性（declare the shapes of  objects）
+
+```ts
+interface A {
+  [k: string]: string
+}
+
+type A1 = Array<string> & {
+  name: string
+}
+interface A2 extends Array<string> {
+  name: string
+}
+
+// 函数
+interface Fn {
+  (a: number): number
+}
+
+// Date
+interface D extends Date {}
+```
+
+## ** type 和 interface 的关系和区别
+
+![type和interface](/type和interface.png)
+
+
+::: tip
+| interface                                       |                        type                        |
+| ----------------------------------------------- | :------------------------------------------------: |
+| 只描述对象                                      |                   可描述所有数据                   |
+| 类型声明                                        |                    只是类型别名                    |
+| 自动合并（对外 Api 尽量用 interface，方便扩展） | 不可重新赋值（对内 Api 尽量用 type，防止代码分散） |
+
+:::
+
+## void 类型
