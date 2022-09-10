@@ -33,6 +33,8 @@ export default defineConfig({
     ],
 
     nav: [
+      { text: '起步', link: '/guide/index', activeMatch: '/guide/' },
+      { text: '框架相关', link: '/frame/index', activeMatch: '/frame/' },
       { text: '工具篇', link: '/util/index', activeMatch: '/util/' },
       { text: '计划', link: '/plan/index', activeMatch: '/plan/' },
       { text: '源码', link: '/source/index', activeMatch: '/source/' },
@@ -41,12 +43,22 @@ export default defineConfig({
         link: '/typescript/index',
         activeMatch: '/typescript/'
       },
-      { text: '起步', link: '/guide/index', activeMatch: '/guide/' },
       { text: '配置', link: '/configs/index', activeMatch: '/config/' },
       { text: '关于', link: '/about/index', activeMatch: '/about/' }
     ],
 
     sidebar: {
+      '/frame/': [
+        {
+          text: 'nginx',
+          collapsible: true,
+          items: [
+            { text: '教程', link: '/frame/nginx/learn' },
+            { text: '配置解析', link: '/frame/nginx/nginx' },
+            { text: '常用配置', link: '/frame/nginx/config' }
+          ]
+        }
+      ],
       '/util/': [
         {
           text: '开始',
