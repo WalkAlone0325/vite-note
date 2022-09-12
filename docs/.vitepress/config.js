@@ -61,7 +61,10 @@ export default defineConfig({
         {
           text: 'Vue',
           collapsible: true,
-          items: [{ text: '面试相关', link: '/frame/vue/interview' }]
+          items: [
+            { text: '面试相关', link: '/frame/vue/interview' },
+            { text: '项目模版搭建', link: '/frame/vue/init' }
+          ]
         }
       ],
       '/util/': [
