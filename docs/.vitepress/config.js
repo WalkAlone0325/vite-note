@@ -57,6 +57,11 @@ export default defineConfig({
             { text: '配置解析', link: '/frame/nginx/nginx' },
             { text: '常用配置', link: '/frame/nginx/config' }
           ]
+        },
+        {
+          text: 'Vue',
+          collapsible: true,
+          items: [{ text: '面试相关', link: '/frame/vue/interview' }]
         }
       ],
       '/util/': [
