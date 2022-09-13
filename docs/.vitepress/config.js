@@ -65,6 +65,14 @@ export default defineConfig({
             { text: '面试相关', link: '/frame/vue/interview' },
             { text: '项目模版搭建', link: '/frame/vue/init' }
           ]
+        },
+        {
+          text: '面试相关',
+          collapsible: true,
+          items: [
+            { text: 'js 面试题', link: '/frame/interview/js' },
+            { text: 'css 面试题', link: '/frame/interview/css' }
+          ]
         }
       ],
       '/util/': [
