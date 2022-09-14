@@ -71,6 +71,7 @@ export default defineConfig({
           collapsible: true,
           items: [
             { text: 'js 面试题', link: '/frame/interview/js' },
+            { text: 'js2 面试题', link: '/frame/interview/js2' },
             { text: 'css 面试题', link: '/frame/interview/css' }
           ]
         }
