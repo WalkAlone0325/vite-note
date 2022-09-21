@@ -1,5 +1,7 @@
 > `create-vite` 创建模版过程解析
 
+## 项目地址：[https://github.com/WalkAlone0325/cli](https://github.com/WalkAlone0325/cli)
+
 ## 理解和思路
 
 我们使用 `vite` 创建项目 的时候使用 `pnpm create vite` 来进行初始化，并经历如下流程：
