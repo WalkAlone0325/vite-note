@@ -146,3 +146,23 @@
 ## 安装 Redis
 
 `brew install redis`
+
+::: tip
+使用说明：
+1. 测试服务： `redis-server`
+2. 开启服务： `brew services start redis`
+3. 查看信息： `brew services info redis`
+4. 停止服务： `brew services stop redis`
+5. `redis-cli` 可以测试 Redis 的各种命令
+
+
+```sh
+127.0.0.1:6379> lpush demos redis-macOS-demo
+OK
+127.0.0.1:6379> rpop demos
+"redis-macOS-demo"
+```
+
+安装 Redis 服务后，需要设置 Redis 密码，`brew services setredispassword redis --password mypassword`。
+
+:::
