@@ -111,13 +111,21 @@ export default defineConfig({
         {
           text: 'Vue3 源码解析',
           collapsible: true,
+          collapsed: true,
           items: [{ text: '总体流程', link: '/source/vue-source' }]
         },
         {
           text: 'create-vite 源码解析',
           collapsible: true,
+          collapsed: true,
           items: [{ text: '解析', link: '/source/create-vite' }]
-        }
+        },
+        {
+          text: 'vben-admin 源码解析',
+          collapsible: true,
+          collapsed: true,  
+          items: [{ text: '文件下载', link: '/source/vben-admin/download' }]
+        },
       ],
       '/typescript/': [
         {
