@@ -124,7 +124,11 @@ export default defineConfig({
           text: 'vben-admin 源码解析',
           collapsible: true,
           collapsed: true,  
-          items: [{ text: '文件下载', link: '/source/vben-admin/download' }]
+          items: [
+            { text: '文件下载', link: '/source/vben-admin/download' },
+            // { text: '页面水印', link: '/source/vben-admin/watermark' },
+            { text: '错误处理', link: '/source/vben-admin/error-handler' },
+          ]
         },
       ],
       '/typescript/': [
