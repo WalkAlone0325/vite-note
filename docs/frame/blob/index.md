@@ -16,21 +16,21 @@
 >     2. endings： 默认值为 `transparent`，用于指定包含结束符 `\n` 的字符串如何被写入，不常用
 
 
-| MIME 类型 | 描述 |
-|:------:|:------:|
-| `text/plain` | 纯文本文档|
-| `text/html` | html文档|
-| `text/javascript` | JavaScript 文件|
-| `text/css` | CSS 文件|
-| `application/json` | JSON 文件|
-| `application/pdf` | PDF 文件|
-| `application/xml` | XML 文件|
-| `image/jpeg` | JPEG 图像|
-| `image/png` | PNG 图像|
-| `image/gif` | GIF 图像|
-| `image/svg+xml` | SVG 图像|
-| `audio/mpeg` | MP3 文件|
-| `video/mpeg` | MP4 文件|
+|     MIME 类型      |      描述       |
+| :----------------: | :-------------: |
+|    `text/plain`    |   纯文本文档    |
+|    `text/html`     |    html文档     |
+| `text/javascript`  | JavaScript 文件 |
+|     `text/css`     |    CSS 文件     |
+| `application/json` |    JSON 文件    |
+| `application/pdf`  |    PDF 文件     |
+| `application/xml`  |    XML 文件     |
+|    `image/jpeg`    |    JPEG 图像    |
+|    `image/png`     |    PNG 图像     |
+|    `image/gif`     |    GIF 图像     |
+|  `image/svg+xml`   |    SVG 图像     |
+|    `audio/mpeg`    |    MP3 文件     |
+|    `video/mpeg`    |    MP4 文件     |
 
 ```ts
 let blob = new Blob(['helloWorld'], { type: 'text/plain' })
