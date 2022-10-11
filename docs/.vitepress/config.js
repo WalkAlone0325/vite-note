@@ -59,6 +59,13 @@ export default defineConfig({
           ]
         },
         {
+          text: '文件 Blob 相关',
+          collapsible: true,
+          items: [
+            { text: 'blob', link: '/frame/blob/index' },
+          ]
+        },
+        {
           text: 'Vue',
           collapsible: true,
           items: [
@@ -123,7 +130,7 @@ export default defineConfig({
         {
           text: 'vben-admin 源码解析',
           collapsible: true,
-          collapsed: true,  
+          collapsed: true,
           items: [
             { text: '文件下载', link: '/source/vben-admin/download' },
             // { text: '页面水印', link: '/source/vben-admin/watermark' },
