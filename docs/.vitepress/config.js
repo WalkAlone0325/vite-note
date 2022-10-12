@@ -119,7 +119,10 @@ export default defineConfig({
           text: 'Vue3 源码解析',
           collapsible: true,
           collapsed: true,
-          items: [{ text: '总体流程', link: '/source/vue-source' }]
+          items: [
+            { text: '总体流程', link: '/source/vue/vue-source' },
+            { text: '简单实现渲染器', link: '/source/vue/compiler' },
+          ]
         },
         {
           text: 'create-vite 源码解析',
