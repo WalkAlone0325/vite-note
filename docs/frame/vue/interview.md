@@ -159,5 +159,94 @@ Vue3 的新特性
 - **静态提升** ： 能够减少更新时创建虚拟 DOM 带来的性能开销和内存占用
 - **预字符串化** ： 在静态提升的基础上，对静态节点进行字符串化。这样做能够减少创建虚拟节点产生的性能开销和内存占用
 - **`v-once` 指令** ： 缓存全部或部分虚拟节点，能够避免组件更新时重新创建虚拟 DOM 带来的性能开销，也可以避免无用的 Diff 操作
-
 :::
+
+## 12. Vue 如何重新加载页面
+
+> 利用 nextTick 在刷新后重新设置为 true 来使得页面或 局部刷新
+
+```vue
+<template>
+  <!-- 局部 -->
+  <div v-if="load">xx</div>
+  <!-- 页面 -->
+  <router-view v-if="load" />
+</template>
+<script>
+export default {
+  setup() {
+    const load = ref(true)
+    const reload = () => {
+      load.value = false
+      nextTick(() => {
+        load.value = true
+      })
+    }
+  }
+}
+</script>
+```
+
+## 13. Vue 常用指令及作用
+
+1. `v-on` : 给标签绑定事件监听器，可以缩写为 `@`，有如下修饰符：
+   1. `.stop` : 调用 `event.stopPropagation()`
+   2. `.prevent` : 调用 `event.preventDefault()`
+   3. `.capture` : 在捕获模式添加事件监听器
+   4. `.self` : 只有事件从元素本身发出才触发处理函数
+   5. `.{keyAlias}` : 只在某些按键下触发处理函数
+   6. `.once` : 最多触发一次处理函数
+   7. `.left` : 只在鼠标左键事件触发处理函数
+   8. `.right` : 只在鼠标右键事件触发处理函数
+   9. `.middle` : 只在鼠标中键事件触发处理函数
+   10. `.passive` : 通过 `{ passive: true }` 附加一个 DOM 事件
+2. `v-bind` : 对属性进行动态绑定，可以缩写为 `:`，有如下修饰符：
+   1. `.camel` : 将短横线命名的 `attribute` 转变为驼峰式命名
+   2. `.prop` : 强制绑定为 `DOM property`
+   3. `.attr` : 强制绑定为 `DOM attribute`
+3. `v-slot` : 用于声明具名插槽或是期望接收 props 的作用域插槽，可以缩写为 `#`
+4. `v-for` : 循环遍历数组元素
+5. `v-show` : 通过 `display` css 属性控制是否显示内容
+6. `v-if` : 通过 js 三元表达式来显示和隐藏标签
+7. `v-else` : 与 `v-if` 连用
+8. `v-text` : 解析文本，更新元素的文本内容
+9.  `v-html` : 解析 html 标签，更新元素的 `innerHTML`
+10. `v-model` : 在表单输入元素或组件上创建双向绑定，适用于 `<input>` `<select>` `<textarea>` `components`， 有如下修饰符：
+    1. `.lazy` : 监听 `change` 事件而不是 `input`
+    2. `.number` : 将输入的合法符串转为数字
+    3. `.trim` : 移除输入内容两端空格
+
+11. `v-pre` : 跳过该元素及其所有子元素的编译
+12. `v-once` : 仅渲染元素和组件一次，并跳过之后的更新
+13. `v-memo` : 缓存一个模板的子树。在元素和组件上都可以使用
+14. `v-cloak` : 用于隐藏尚未完成编译的 DOM 模板
+
+## 14. Vue 中 v-for 的作用
+
+- key 的作用主要是为了更高效的更新 虚拟 DOM，因为可以精确找到相同节点
+- Vue 在 patch 中，判断两个节点是否是相同节点，key 是必要条件。如果不写 key，会导致元素频繁更新，整个 patch 过程比较低效，影响性能
+- 避免使用数组下标做 key，key值不唯一可能会导致视图错误，和不会触发过渡效果等
+
+## 15. Vue 的生命周期
+
+1. `beforeCreate` : 在组件实例初始化完成之后立即调用
+2. `created` : 在组件实例处理完所有与状态相关的选项后调用
+3. `beforeMount` : 在组件被挂载之前调用
+4. `mounted` : 在组件被挂载之后调用
+5. `beforeUpdate` : 在组件即将因为一个响应式状态变更而更新其 DOM 树之前调用
+6. `updated` : 在组件因为一个响应式状态变更而更新其 DOM 树之后调用
+7. `beforeUnmount` : 在一个组件实例被卸载之前调用
+8. `unmounted` : 在一个组件实例被卸载之后调用
+9. `activated` : 若组件实例是 `<KeepAlive>` 缓存树的一部分，当组件被插入到 DOM 中时调用
+10. `deactivated` : 若组件实例是 `<KeepAlive>` 缓存树的一部分，当组件从 DOM 中被移除时调用
+11. `errorCapured` : 在捕获了后代组件传递的错误时调用
+
+## 16. Vue 子组件和父组件执行顺序
+
+> **组件挂载更新时都是在 `beforeMount` 之后 `mounted` 之前 进行 `patch` **
+
+加载渲染过程：父 beforeCreate => 父 created => 父 beforeMount => 子 beforeCreate => 子 created => 子 beforeMount => 子 mounted => 父 mounted
+
+更新过程：父组件 beforeUpdate =>子组件 beforeUpdate =>子组件 updated => 父组件 updated
+
+
