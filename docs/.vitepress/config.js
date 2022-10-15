@@ -36,7 +36,7 @@ export default defineConfig({
       { text: '起步', link: '/guide/index', activeMatch: '/guide/' },
       { text: '框架相关', link: '/frame/index', activeMatch: '/frame/' },
       { text: '工具篇', link: '/util/index', activeMatch: '/util/' },
-      { text: '计划', link: '/plan/index', activeMatch: '/plan/' },
+      // { text: '计划', link: '/plan/index', activeMatch: '/plan/' },
       { text: '源码', link: '/source/index', activeMatch: '/source/' },
       {
         text: 'TypeScript',
@@ -70,7 +70,8 @@ export default defineConfig({
           collapsible: true,
           items: [
             { text: '面试相关', link: '/frame/vue/interview' },
-            { text: '项目模版搭建', link: '/frame/vue/init' }
+            { text: '项目模版搭建', link: '/frame/vue/init' },
+            { text: '同构渲染', link: '/frame/vue/hydration' },
           ]
         },
         {
