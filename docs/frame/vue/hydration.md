@@ -1,5 +1,7 @@
 # 同构渲染
 
+自建项目模版：[https://github.com/WalkAlone0325/vue3-ssr-template](https://github.com/WalkAlone0325/vue3-ssr-template)
+
 > - **客户端渲染CSR**：用于构建客户端应用程序，组件代码能够在浏览器中运行，并输出 DOM 元素。
 > - **服务端渲染SSR**：用于在 Node.js 中运行，可以将同样的组件渲染为字符串发送给浏览器。
 > - **同构渲染**：两者结合
