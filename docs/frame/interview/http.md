@@ -141,7 +141,19 @@ http1.1 相对于 http1.0 还新增了很多请求方法，如 PUT、HEAD、OPTI
 **解决方法** ： 服务器设置过期时间和请求次数，超过这个时间或者次数就断掉连接。
 
 
-## 2. 
+## 11. axios 取消请求
+
+```js
+const controller = new AbortController()
+
+axios.get('/foo/bar', {
+  signal: controller.signal
+}).then(res => { })
+
+// 取消
+controller.abort()
+```
+
 ## 2. 
 ## 2. 
 ## 2. 
