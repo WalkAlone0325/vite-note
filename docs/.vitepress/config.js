@@ -44,7 +44,8 @@ export default defineConfig({
         activeMatch: '/typescript/'
       },
       { text: '配置', link: '/configs/index', activeMatch: '/config/' },
-      { text: '关于', link: '/about/index', activeMatch: '/about/' }
+      { text: '关于', link: '/about/index', activeMatch: '/about/' },
+      // { text: '简历', link: '/about/rename.html', activeMatch: '/rename/' }
     ],
 
     sidebar: {
@@ -71,6 +72,7 @@ export default defineConfig({
           items: [
             { text: '面试相关', link: '/frame/vue/interview' },
             { text: '项目模版搭建', link: '/frame/vue/init' },
+            { text: '大屏适配方案', link: '/frame/vue/vue-fit' },
             { text: '同构渲染', link: '/frame/vue/hydration' },
           ]
         },
