@@ -60,10 +60,11 @@ export default defineConfig({
           ]
         },
         {
-          text: '文件 Blob 相关',
+          text: '文件网络相关',
           collapsible: true,
           items: [
             { text: 'blob', link: '/frame/blob/index' },
+            { text: 'network', link: '/frame/blob/network' },
           ]
         },
         {
