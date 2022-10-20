@@ -60,11 +60,12 @@ export default defineConfig({
           ]
         },
         {
-          text: '文件网络相关',
+          text: 'JavaScript',
           collapsible: true,
           items: [
-            { text: 'blob', link: '/frame/blob/index' },
-            { text: 'network', link: '/frame/blob/network' },
+            { text: '事件 Event', link: '/frame/js/event' },
+            { text: '文件 blob', link: '/frame/js/blob' },
+            { text: '网络 network', link: '/frame/js/network' },
           ]
         },
         {
