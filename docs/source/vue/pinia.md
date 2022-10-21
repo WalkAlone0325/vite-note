@@ -269,6 +269,8 @@ export function storeToRefs(store) {
 
 ## 剩余
 
-1. 热更新 
-2. 发布订阅
-3. ...
+1. 热更新
+2. mapXxx 辅助函数
+3. use 插件
+4. 发布订阅
+5. 其中包含的 $xx 函数
