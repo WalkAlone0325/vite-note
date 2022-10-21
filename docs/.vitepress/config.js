@@ -45,7 +45,7 @@ export default defineConfig({
       },
       { text: '配置', link: '/configs/index', activeMatch: '/config/' },
       { text: '关于', link: '/about/index', activeMatch: '/about/' },
-      // { text: '简历', link: '/about/rename.html', activeMatch: '/rename/' }
+      // { text: '简历', link: '/about/rename', activeMatch: '/rename/' }
     ],
 
     sidebar: {
@@ -131,10 +131,13 @@ export default defineConfig({
           ]
         },
         {
-          text: 'create-vite 源码解析',
+          text: 'Vue3 相关生态库',
           collapsible: true,
           collapsed: true,
-          items: [{ text: '解析', link: '/source/create-vite' }]
+          items: [
+            { text: 'Pinia', link: '/source/vue/pinia' },
+            { text: 'Vite create-vite', link: '/source/vue/create-vite' },
+          ]
         },
         {
           text: 'vben-admin 源码解析',
