@@ -33,10 +33,9 @@ export default defineConfig({
     ],
 
     nav: [
-      { text: '起步', link: '/guide/index', activeMatch: '/guide/' },
+      { text: '文章', link: '/article/index', activeMatch: '/article/' },
       { text: '框架相关', link: '/frame/index', activeMatch: '/frame/' },
       { text: '工具篇', link: '/util/index', activeMatch: '/util/' },
-      // { text: '计划', link: '/plan/index', activeMatch: '/plan/' },
       { text: '源码', link: '/source/index', activeMatch: '/source/' },
       {
         text: 'TypeScript',
@@ -44,11 +43,23 @@ export default defineConfig({
         activeMatch: '/typescript/'
       },
       { text: '配置', link: '/configs/index', activeMatch: '/config/' },
-      { text: '关于', link: '/about/index', activeMatch: '/about/' },
+      { text: '关于', link: '/about/index', activeMatch: '/about/' }
       // { text: '简历', link: '/about/rename', activeMatch: '/rename/' }
     ],
 
     sidebar: {
+      '/article/': [
+        {
+          items: [
+            { text: '归档', link: '/article/index' },
+
+            { text: 'HTTP 状态码全解析', link: '/article/http-status' },
+            { text: '事件 Event', link: '/article/event' },
+            { text: '文件 blob', link: '/article/blob' },
+            { text: '网络 network', link: '/article/network' }
+          ]
+        }
+      ],
       '/frame/': [
         {
           text: 'nginx',
@@ -60,22 +71,13 @@ export default defineConfig({
           ]
         },
         {
-          text: 'JavaScript',
-          collapsible: true,
-          items: [
-            { text: '事件 Event', link: '/frame/js/event' },
-            { text: '文件 blob', link: '/frame/js/blob' },
-            { text: '网络 network', link: '/frame/js/network' },
-          ]
-        },
-        {
           text: 'Vue',
           collapsible: true,
           items: [
             { text: '面试相关', link: '/frame/vue/interview' },
             { text: '项目模版搭建', link: '/frame/vue/init' },
             { text: '大屏适配方案', link: '/frame/vue/vue-fit' },
-            { text: '同构渲染', link: '/frame/vue/hydration' },
+            { text: '同构渲染', link: '/frame/vue/hydration' }
           ]
         },
         {
@@ -85,7 +87,7 @@ export default defineConfig({
             { text: 'js 面试题', link: '/frame/interview/js' },
             { text: 'js2 面试题', link: '/frame/interview/js2' },
             { text: 'css 面试题', link: '/frame/interview/css' },
-            { text: 'http 面试题', link: '/frame/interview/http' },
+            { text: 'http 面试题', link: '/frame/interview/http' }
           ]
         }
       ],
@@ -110,16 +112,6 @@ export default defineConfig({
           ]
         }
       ],
-      'guide/': [
-        {
-          text: '开始',
-          collapsible: true,
-          items: [
-            { text: '起步', link: '/guide/quick-start' },
-            { text: '配置', link: '/guide/config' }
-          ]
-        }
-      ],
       '/source/': [
         {
           text: 'Vue3 源码解析',
@@ -127,7 +119,7 @@ export default defineConfig({
           collapsed: true,
           items: [
             { text: '总体流程', link: '/source/vue/vue-source' },
-            { text: '简单实现渲染器', link: '/source/vue/compiler' },
+            { text: '简单实现渲染器', link: '/source/vue/compiler' }
           ]
         },
         {
@@ -136,7 +128,7 @@ export default defineConfig({
           collapsed: true,
           items: [
             { text: 'Pinia', link: '/source/vue/pinia' },
-            { text: 'Vite create-vite', link: '/source/vue/create-vite' },
+            { text: 'Vite create-vite', link: '/source/vue/create-vite' }
           ]
         },
         {
@@ -146,9 +138,9 @@ export default defineConfig({
           items: [
             { text: '文件下载', link: '/source/vben-admin/download' },
             // { text: '页面水印', link: '/source/vben-admin/watermark' },
-            { text: '错误处理', link: '/source/vben-admin/error-handler' },
+            { text: '错误处理', link: '/source/vben-admin/error-handler' }
           ]
-        },
+        }
       ],
       '/typescript/': [
         {

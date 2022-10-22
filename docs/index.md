@@ -14,7 +14,7 @@ hero:
   actions:
     - theme: brand
       text: 开始
-      link: /guide/
+      link: /article/
     - theme: alt
       text: 查看我的 GitHub
       link: https://github.com/WalkAlone0325
