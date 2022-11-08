@@ -87,7 +87,8 @@ export default defineConfig({
             { text: 'js 面试题', link: '/frame/interview/js' },
             { text: 'js2 面试题', link: '/frame/interview/js2' },
             { text: 'css 面试题', link: '/frame/interview/css' },
-            { text: 'http 面试题', link: '/frame/interview/http' }
+            { text: 'http 面试题', link: '/frame/interview/http' },
+            { text: '优化 面试题', link: '/frame/interview/optimization' }
           ]
         }
       ],
