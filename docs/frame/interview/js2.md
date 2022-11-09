@@ -530,6 +530,8 @@ valueOf 除了 **date 会返回 时间戳**，其它都会返回 **数据本身*
 
 ## 20. 事件循环机制（微任务和宏任务） Event Loop
 
+详情链接参考：[面试必问之 JS 事件循环（Event Loop)](https://mp.weixin.qq.com/s/wugntKhMZpgr6RtB1AwAmQ)
+
 事件循环是通过任务队列的机制来进行协调的。
 
 - js 分为同步任务和异步任务

@@ -56,7 +56,8 @@ export default defineConfig({
             { text: 'HTTP 状态码全解析', link: '/article/http-status' },
             { text: '事件 Event', link: '/article/event' },
             { text: '文件 blob', link: '/article/blob' },
-            { text: '网络 network', link: '/article/network' }
+            { text: '网络 network', link: '/article/network' },
+            { text: '期约 Promise', link: '/article/promise' }
           ]
         }
       ],

@@ -2,3 +2,4 @@
 2. [事件 Event](./event.md)
 3. [文件 blob](./blob.md)
 4. [网络 network](./network.md)
+5. [Promise 实现](./promise.md)

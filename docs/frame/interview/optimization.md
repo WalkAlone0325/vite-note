@@ -92,3 +92,7 @@ performance.getEntriesByName('first-contentful-paint')[0]
 2. 对一些库替换为更小提交的库，如 `moment` -> `dayjs`
 3. 对一些库进行按需加载，如 `import lodash` -> `import lodash/get`
 4. 对一些库使用支持 Tree Shaking，如 `import lodash` -> `import lodash-es`
+
+## 4. webpack 优化
+
+[基于Webpack5的打包构建优化](https://juejin.cn/post/7136523508527726623#heading-21)
