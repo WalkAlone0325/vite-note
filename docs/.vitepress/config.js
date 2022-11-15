@@ -130,6 +130,7 @@ export default defineConfig({
           collapsed: true,
           items: [
             { text: 'Pinia', link: '/source/vue/pinia' },
+            { text: 'Router', link: '/source/vue/router' },
             { text: 'Vite create-vite', link: '/source/vue/create-vite' }
           ]
         },
