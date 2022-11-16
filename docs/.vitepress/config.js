@@ -34,6 +34,7 @@ export default defineConfig({
 
     nav: [
       { text: '文章', link: '/article/index', activeMatch: '/article/' },
+      { text: '读后感', link: '/readFeel/index', activeMatch: '/readFeel/' },
       { text: '框架相关', link: '/frame/index', activeMatch: '/frame/' },
       { text: '工具篇', link: '/util/index', activeMatch: '/util/' },
       { text: '源码', link: '/source/index', activeMatch: '/source/' },
@@ -44,7 +45,6 @@ export default defineConfig({
       },
       { text: '配置', link: '/configs/index', activeMatch: '/config/' },
       { text: '关于', link: '/about/index', activeMatch: '/about/' }
-      // { text: '简历', link: '/about/rename', activeMatch: '/rename/' }
     ],
 
     sidebar: {
@@ -59,6 +59,11 @@ export default defineConfig({
             { text: '网络 network', link: '/article/network' },
             { text: '期约 Promise', link: '/article/promise' }
           ]
+        }
+      ],
+      '/readFeel': [
+        {
+          items: [{ text: '东野圭吾：《毕业》', link: '/readFeel/毕业' }]
         }
       ],
       '/frame/': [
