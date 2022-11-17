@@ -63,7 +63,10 @@ export default defineConfig({
       ],
       '/readFeel': [
         {
-          items: [{ text: '东野圭吾：《毕业》', link: '/readFeel/毕业' }]
+          items: [
+            { text: '随记', link: '/readFeel/随记' },
+            { text: '东野圭吾：《毕业》', link: '/readFeel/毕业' }
+        ]
         }
       ],
       '/frame/': [
