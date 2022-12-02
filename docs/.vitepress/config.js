@@ -57,7 +57,10 @@ export default defineConfig({
             { text: '事件 Event', link: '/article/event' },
             { text: '文件 blob', link: '/article/blob' },
             { text: '网络 network', link: '/article/network' },
-            { text: '期约 Promise', link: '/article/promise' }
+            { text: '期约 Promise', link: '/article/promise' },
+            { text: '后台管理系统相关整理', link: '/article/后台管理' },
+            { text: 'webpack配置一', link: '/article/webpack配置一' },
+            { text: 'webpack配置二', link: '/article/webpack配置二' }
           ]
         }
       ],
@@ -66,10 +69,15 @@ export default defineConfig({
           items: [
             { text: '随记', link: '/readFeel/随记' },
             { text: '东野圭吾：《毕业》', link: '/readFeel/毕业' }
-        ]
+          ]
         }
       ],
       '/frame/': [
+        // {
+        //   text: 'CI/CD',
+        //   collapsible: true,
+        //   items: [{ text: '教程', link: '/frame/cicd/index' }]
+        // },
         {
           text: 'nginx',
           collapsible: true,
@@ -139,9 +147,19 @@ export default defineConfig({
           items: [
             { text: 'Pinia', link: '/source/vue/pinia' },
             { text: 'Router', link: '/source/vue/router' },
-            { text: 'Vite create-vite', link: '/source/vue/create-vite' }
+            { text: 'Vite create-vite', link: '/source/vue/create-vite' },
+            { text: 'Vite', link: '/source/vue/vite' }
           ]
         },
+        // {
+        //   text: 'Element Plus',
+        //   collapsible: true,
+        //   collapsed: true,
+        //   items: [
+        //     { text: 'dialog', link: '/source/element-plus/dialog' },
+        //     { text: 'overlay', link: '/source/element-plus/overlay' }
+        //   ]
+        // },
         {
           text: 'vben-admin 源码解析',
           collapsible: true,
