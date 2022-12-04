@@ -1,5 +1,7 @@
 # Vue3 源码分析
 
+![vue3 源码导图](https://raw.githubusercontent.com/WalkAlone0325/source-draw/main/Vue3%20%E6%9E%84%E5%BB%BA%E6%96%B0.drawio.png)
+
 ## 挂载过程
 
 > createApp => createRenderer => baseCreateRenderer => render [patch] / createAppAPI [app]
