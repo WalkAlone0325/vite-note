@@ -136,8 +136,8 @@ export default defineConfig({
           collapsible: true,
           collapsed: true,
           items: [
-            { text: '总体流程', link: '/source/vue/vue-source' },
-            { text: '简单实现渲染器', link: '/source/vue/compiler' }
+            { text: '总体流程', link: '/source/vue3/vue-source' },
+            { text: '简单实现渲染器', link: '/source/vue3/compiler' }
           ]
         },
         {
