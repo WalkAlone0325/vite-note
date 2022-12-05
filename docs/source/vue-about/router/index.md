@@ -1,6 +1,6 @@
-## Router 实现
+# Router 实现
 
-### createRouter 函数创建
+## createRouter 函数创建
 1. 创建 `createRouter` 函数
 2. 定义路由器实例 方法、拦截器等
 3. 构建路由器实例 `router`，并作为 `createRouter` 函数的返回值
@@ -87,7 +87,7 @@ export function createRouter(options) {
 
 ```
 
-### useApi `useRouter` `useRoute` `useLink`
+## useApi `useRouter` `useRoute` `useLink`
 
 使用 `inject` 的方式 注入 `hook`
 
@@ -105,7 +105,7 @@ export function useRoute() {
 
 `useLink` 函数在 `RouterLink` 中
 
-### RouterLink
+## RouterLink
 
 1. 创建 `RouterLink` 组件，`props` 主要为 `to` （必填，跳转）
 2. 使用虚拟函数默认渲染为 `h('a', { href: link.href, onClick: link.navigate }, children)`
@@ -201,7 +201,7 @@ function guardEvent(e) {
 }
 ```
 
-### RouterView
+## RouterView
 
 1. 注册 `RouterView` 组件，渲染 `slots.default(ViewComponent) || h(ViewComponent)`
 2. 重点 `ViewComponent`，表示要渲染的路由组件

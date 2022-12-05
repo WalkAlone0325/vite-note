@@ -145,10 +145,10 @@ export default defineConfig({
           collapsible: true,
           collapsed: true,
           items: [
-            { text: 'Pinia', link: '/source/vue/pinia' },
-            { text: 'Router', link: '/source/vue/router' },
-            { text: 'Vite create-vite', link: '/source/vue/create-vite' },
-            { text: 'Vite', link: '/source/vue/vite' }
+            { text: 'Pinia', link: '/source/vue-about/pinia/' },
+            { text: 'Router', link: '/source/vue-about/router/' },
+            { text: 'Vite', link: '/source/vue-about/vite/' },
+            { text: 'Vite create-vite', link: '/source/vue-about/vite/create-vite' },
           ]
         },
         // {
