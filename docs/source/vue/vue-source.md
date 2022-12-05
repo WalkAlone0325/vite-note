@@ -1,6 +1,10 @@
 # Vue3 源码分析
 
-![vue3 源码导图](https://raw.githubusercontent.com/WalkAlone0325/source-draw/main/Vue3%20%E6%9E%84%E5%BB%BA%E6%96%B0.drawio.png)
+![vue3 源码导图](/Vue3source.drawio.png)
+
+<a href="/Vue3pdf.drawio.pdf" target="_blank">vue3 源码导图PDF</a>
+<br />
+<a href="/Vue3html.drawio.html" target="_blank">vue3 源码导图html</a>
 
 ## 挂载过程
 
