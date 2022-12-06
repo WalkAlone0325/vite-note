@@ -132,6 +132,17 @@ export default defineConfig({
       ],
       '/source/': [
         {
+          text: 'Vue3 API',
+          collapsible: true,
+          collapsed: true,
+          items: [
+            { text: '合集', link: '/source/vue3-api/' },
+            { text: '@vue/reactivity', link: '/source/vue3-api/reactivity' },
+            // { text: './apiComputed', link: '/source/vue3-api/apiComputed' },
+            // { text: './apiWatch', link: '/source/vue3-api/apiWatch' }
+          ]
+        },
+        {
           text: 'Vue3 源码解析',
           collapsible: true,
           collapsed: true,
@@ -148,7 +159,10 @@ export default defineConfig({
             { text: 'Pinia', link: '/source/vue-about/pinia/' },
             { text: 'Router', link: '/source/vue-about/router/' },
             { text: 'Vite', link: '/source/vue-about/vite/' },
-            { text: 'Vite create-vite', link: '/source/vue-about/vite/create-vite' },
+            {
+              text: 'Vite create-vite',
+              link: '/source/vue-about/vite/create-vite'
+            }
           ]
         },
         // {
