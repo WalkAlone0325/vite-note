@@ -135,8 +135,7 @@ function isRef(r: any): r us Ref {
 
 ## toRef
 
-作用：
-
+作用：基于响应式对象上的一个属性，创建一个对应的 ref
 
 ```ts
 class ObjectRefImpl<T extends object, K extends keyof T> {
@@ -161,5 +160,45 @@ class ObjectRefImpl<T extends object, K extends keyof T> {
 function toRef(object, key, defaultValue) {
   const val = object[key]
   return isRef(val) ? val : new ObjectRefImpl(object, key, defaultValue)
+}
+```
+
+## toRefs
+
+作用：将一个响应式对象转换为一个普通对象，这个普通对象的每个属性都是指向源对象相应属性的 ref。每个单独的 ref 都是使用 toRef() 创建的。
+
+```ts
+export type ToRefs<T = any> = {
+  [K in keyof T]: ToRef<T[K]>
+}
+export function toRefs<T extends object>(object: T): ToRefs<T> {
+  const ret: any = isArray(object) ? new Array(object.length) : {}
+  for (const key in object) {
+    ret[key] = toRef(object, key)
+  }
+  return ret
+}
+```
+
+## isProxy
+
+作用：检查一个对象是否是由 `reactive()`、`readonly()`、`shallowReactive()` 或 `shallowReadonly()` 创建的代理。
+
+```ts
+export function isProxy(value: unknown): boolean {
+  return isReactive(value) || isReadonly(value)
+}
+```
+
+## isReactive
+
+作用：检查一个对象是否是由 `reactive()` 或 `shallowReactive()` 创建的代理。
+
+```ts
+export function isReactive(value: unknown): boolean {
+  if (isReadonly(value)) {
+    return isReactive((value as Target)[ReactiveFlags.RAW])
+  }
+  return !!(value && (value as Target)[ReactiveFlags.IS_REACTIVE])
 }
 ```

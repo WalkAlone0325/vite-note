@@ -138,6 +138,7 @@ export default defineConfig({
           items: [
             { text: '合集', link: '/source/vue3-api/' },
             { text: '@vue/reactivity', link: '/source/vue3-api/reactivity' },
+            { text: './vnode', link: '/source/vue3-api/vnode' }
             // { text: './apiComputed', link: '/source/vue3-api/apiComputed' },
             // { text: './apiWatch', link: '/source/vue3-api/apiWatch' }
           ]
