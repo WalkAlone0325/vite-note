@@ -138,7 +138,16 @@ export default defineConfig({
           items: [
             { text: '合集', link: '/source/vue3-api/' },
             { text: '@vue/reactivity', link: '/source/vue3-api/reactivity' },
-            { text: './vnode', link: '/source/vue3-api/vnode' }
+            { text: './vnode', link: '/source/vue3-api/vnode' },
+            { text: './apiInject', link: '/source/vue3-api/apiInject' },
+            {
+              text: 'nextTick defineComponent',
+              link: '/source/vue3-api/basic'
+            },
+            {
+              text: './apiSetupHelpers',
+              link: '/source/vue3-api/apiSetupHelpers'
+            }
             // { text: './apiComputed', link: '/source/vue3-api/apiComputed' },
             // { text: './apiWatch', link: '/source/vue3-api/apiWatch' }
           ]
