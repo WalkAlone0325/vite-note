@@ -177,15 +177,16 @@ export default defineConfig({
             }
           ]
         },
-        // {
-        //   text: 'Element Plus',
-        //   collapsible: true,
-        //   collapsed: true,
-        //   items: [
-        //     { text: 'dialog', link: '/source/element-plus/dialog' },
-        //     { text: 'overlay', link: '/source/element-plus/overlay' }
-        //   ]
-        // },
+        {
+          text: 'Element Plus',
+          collapsible: true,
+          collapsed: true,
+          items: [
+            { text: 'dialog', link: '/source/element-plus/dialog' },
+            { text: 'overlay', link: '/source/element-plus/overlay' },
+            { text: 'drawer', link: '/source/element-plus/drawer' }
+          ]
+        },
         {
           text: 'vben-admin 源码解析',
           collapsible: true,
