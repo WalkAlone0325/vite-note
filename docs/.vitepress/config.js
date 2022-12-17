@@ -184,7 +184,8 @@ export default defineConfig({
           items: [
             { text: 'dialog', link: '/source/element-plus/dialog' },
             { text: 'overlay', link: '/source/element-plus/overlay' },
-            { text: 'drawer', link: '/source/element-plus/drawer' }
+            { text: 'drawer', link: '/source/element-plus/drawer' },
+            { text: 'card', link: '/source/element-plus/card' },
           ]
         },
         {
