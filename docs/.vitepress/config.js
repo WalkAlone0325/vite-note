@@ -131,6 +131,16 @@ export default defineConfig({
         }
       ],
       '/source/': [
+        // {
+        //   text: 'React API',
+        //   collapsed: true,
+        //   collapsible: true,
+        //   items: [
+        //     { text: '合集', link: '/source/react-api/' },
+        //     { text: 'Component', link: '/source/react-api/Component' },
+        //     { text: '合集', link: '/source/react-api/' }
+        //   ]
+        // },
         {
           text: 'Vue3 API',
           collapsible: true,
@@ -185,7 +195,7 @@ export default defineConfig({
             { text: 'dialog', link: '/source/element-plus/dialog' },
             { text: 'overlay', link: '/source/element-plus/overlay' },
             { text: 'drawer', link: '/source/element-plus/drawer' },
-            { text: 'card', link: '/source/element-plus/card' },
+            { text: 'card', link: '/source/element-plus/card' }
           ]
         },
         {
