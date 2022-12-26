@@ -68,7 +68,8 @@ export default defineConfig({
         {
           items: [
             { text: '随记', link: '/readFeel/随记' },
-            { text: '东野圭吾：《毕业》', link: '/readFeel/毕业' }
+            { text: '东野圭吾：《毕业》', link: '/readFeel/毕业' },
+            { text: '2022 年度总结', link: '/readFeel/2022年度总结' }
           ]
         }
       ],
