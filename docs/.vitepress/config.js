@@ -38,6 +38,7 @@ export default defineConfig({
       { text: '框架相关', link: '/frame/index', activeMatch: '/frame/' },
       { text: '工具篇', link: '/util/index', activeMatch: '/util/' },
       { text: '源码', link: '/source/index', activeMatch: '/source/' },
+      // { text: 'VueUse', link: '/vueuse/index', activeMatch: '/vueuse/' },
       {
         text: 'TypeScript',
         link: '/typescript/index',
@@ -69,7 +70,8 @@ export default defineConfig({
           items: [
             { text: '随记', link: '/readFeel/随记' },
             { text: '东野圭吾：《毕业》', link: '/readFeel/毕业' },
-            { text: '2022 年度总结', link: '/readFeel/2022年度总结' }
+            { text: '2022 年度总结', link: '/readFeel/2022年度总结' },
+            { text: '漫记', link: '/readFeel/漫记' }
           ]
         }
       ],
@@ -221,6 +223,14 @@ export default defineConfig({
           ]
         }
       ]
+      // '/vueuse/': [
+      //   {
+      //     text: 'VueUse',
+      //     collapsed: false,
+      //     collapsible: true,
+      //     items: [{ text: 'state', link: '/vueuse/state' }]
+      //   }
+      // ]
     }
   }
 })
