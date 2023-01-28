@@ -44,7 +44,7 @@ export default defineConfig({
         link: '/typescript/index',
         activeMatch: '/typescript/'
       },
-      { text: '配置', link: '/configs/index', activeMatch: '/config/' },
+      { text: '随记', link: '/configs/index', activeMatch: '/config/' },
       { text: '关于', link: '/about/index', activeMatch: '/about/' }
     ],
 
