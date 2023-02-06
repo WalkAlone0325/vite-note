@@ -104,6 +104,8 @@ export default defineConfig({
           text: '面试相关',
           collapsible: true,
           items: [
+            { text: 'HR面试', link: '/frame/interview/HR' },
+            { text: '面试', link: '/frame/interview/面试' },
             { text: 'js 面试题', link: '/frame/interview/js' },
             { text: 'js2 面试题', link: '/frame/interview/js2' },
             { text: 'css 面试题', link: '/frame/interview/css' },
