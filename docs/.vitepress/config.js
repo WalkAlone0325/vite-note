@@ -175,7 +175,10 @@ export default defineConfig({
           collapsed: true,
           items: [
             { text: '总体流程', link: '/source/vue3/vue-source' },
-            { text: '简单实现渲染器', link: '/source/vue3/compiler' }
+            { text: '简单实现渲染器', link: '/source/vue3/compiler' },
+            { text: 'runtime', link: '/source/vue3/runtime' },
+            { text: 'compile', link: '/source/vue3/compile' },
+            { text: 'reactivity', link: '/source/vue3/reactivity' }
           ]
         },
         {
