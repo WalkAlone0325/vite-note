@@ -15,9 +15,7 @@ export default defineConfig({
     ['link', { rel: 'icon', type: 'image/svg+xml', href: '/home.jpg' }]
   ],
 
-  vue: {
-    reactivityTransform: true
-  },
+  vue: {},
 
   themeConfig: {
     logo: '/home.jpg',

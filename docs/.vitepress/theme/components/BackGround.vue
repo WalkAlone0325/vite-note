@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { reactive, onMounted } from 'vue'
+import { ref, reactive, onMounted, Ref } from 'vue'
 import { useWindowSize, useRafFn } from '@vueuse/core'
 import type { Fn } from '@vueuse/core'
 
@@ -8,22 +8,22 @@ const r90 = Math.PI / 2
 const r15 = Math.PI / 12
 const color = '#88888825'
 
-const canvas = $ref<HTMLCanvasElement | null>(null)
+const canvas = ref<HTMLCanvasElement | null>(null)
 
 const { random } = Math
 const size = reactive(useWindowSize())
-let start = $ref<Fn>(() => { })
-let stopped = $ref(false)
-const init = $ref(4)
-const len = $ref(6)
+let start = ref<Fn>(() => { })
+let stopped = ref(false)
+const init = ref(4)
+const len = ref(6)
 
 function initCanvas(
-  canvas: HTMLCanvasElement,
+  canvas: Ref<HTMLCanvasElement>,
   width = 400,
   height = 400,
   _dpi?: number
 ) {
-  const ctx = canvas.getContext('2d')!
+  const ctx = canvas.value.getContext('2d')!
 
   const dpr = window.devicePixelRatio || 1
   // @ts-expect-error vendor
@@ -37,10 +37,10 @@ function initCanvas(
 
   const dpi = _dpi || dpr / bsr
 
-  canvas.style.width = `${width}px`
-  canvas.style.height = `${height}px`
-  canvas.width = dpi * width
-  canvas.height = dpi * height
+  canvas.value.style.width = `${width}px`
+  canvas.value.style.height = `${height}px`
+  canvas.value.width = dpi * width
+  canvas.value.height = dpi * height
   ctx.scale(dpi, dpi)
 
   return { ctx, dpi }
@@ -54,14 +54,14 @@ function polar2cart(x = 0, y = 0, r = 0, theta = 0) {
 
 onMounted(() => {
   const { ctx } = initCanvas(canvas!, size.width, size.height)
-  const { width, height } = canvas!
+  const { width, height } = canvas.value!
 
   let steps: Fn[] = []
   let prevSteps: Fn[] = []
 
   let iterations = 0
   const step = (x: number, y: number, rad: number) => {
-    const length = random() * len
+    const length = random() * len.value
 
     const [nx, ny] = polar2cart(x, y, length, rad)
 
@@ -81,9 +81,9 @@ onMounted(() => {
     )
       return
 
-    if (iterations <= init || random() > 0.5)
+    if (iterations <= init.value || random() > 0.5)
       steps.push(() => step(nx, ny, rad1))
-    if (iterations <= init || random() > 0.5)
+    if (iterations <= init.value || random() > 0.5)
       steps.push(() => step(nx, ny, rad2))
   }
 
@@ -102,14 +102,14 @@ onMounted(() => {
 
     if (!prevSteps.length) {
       controls.pause()
-      stopped = true
+      stopped.value = true
     }
     prevSteps.forEach((i) => i())
   }
 
   controls = useRafFn(frame, { immediate: true })
 
-  start = () => {
+  start.value = () => {
     controls.pause()
     iterations = 0
     ctx.clearRect(0, 0, width, height)
@@ -124,10 +124,10 @@ onMounted(() => {
     ]
     if (size.width < 500) steps = steps.slice(0, 2)
     controls.resume()
-    stopped = false
+    stopped.value = false
   }
 
-  start()
+  start.value()
 })
 </script>
 
