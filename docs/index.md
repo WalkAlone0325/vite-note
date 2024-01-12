@@ -25,9 +25,18 @@ features:
     details: 记录工作中遇到的问题，记录日常的学习状态
   - icon: 🛠️
     title: 保持学习的习惯
-    details: 学习新的东西，了解新的技术，深入 code
+    details: 学习新的东西，了解新的技术，深入 code，还要学习其它有意义的东西
   - icon: 🕰
     title: 早睡早起
     details: 少熬夜，接触一些新的东西
+  - icon: 🧍
+    title: 独处守心，群处守嘴
+    details: 守住内心的底线，不要说一些乱七八糟的话，做一些不该逾越的事
+  - icon: ☝️
+    title: 逢人不必言深，孤独本是常态
+    details: 做好自己
+  - icon: 💪
+    title: 自律即自由
+    details: 学会克制，自我监督
 ---
 
