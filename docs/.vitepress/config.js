@@ -72,7 +72,9 @@ export default defineConfig({
             { text: '东野圭吾：《解忧杂货店》', link: '/readFeel/解忧杂货店' },
             { text: '2022 年度总结', link: '/readFeel/2022年度总结' },
             { text: '漫记', link: '/readFeel/漫记' },
-            { text: '2023 年度总结', link: '/readFeel/2023年度总结' }
+            { text: '2023 年度总结', link: '/readFeel/2023年度总结' },
+            { text: '2025 年', link: '/readFeel/2025年' },
+            { text: '莫言：《不被大风吹倒》', link: '/readFeel/不被大风吹倒' },
           ]
         }
       ],
