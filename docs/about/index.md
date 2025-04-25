@@ -1,10 +1,10 @@
 # 关于我
 
-代码爱好者，3年前端开发经验，喜欢敲代码，喜欢新的技术
+代码爱好者，5年前端开发经验，喜欢敲代码，喜欢新的技术，喜欢折腾，喜欢分享，喜欢学习。
 
 ## 介绍
 
-> 3年前端开发，熟悉Vue，Vite，上手 React + TS
+> 5年前端开发，熟悉Vue，Vite，上手 React + TS
 
 ## 找到我
 1. [掘金](https://juejin.cn/user/712139265285437)
@@ -183,4 +183,3 @@ https://iconpark.oceanengine.com/home
 https://iconify.design/
 
 https://icomoon.io/#icons
-
