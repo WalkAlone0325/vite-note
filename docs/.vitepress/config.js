@@ -167,9 +167,10 @@ export default defineConfig({
               link: '/source/vue3-api/apiSetupHelpers'
             },
             { text: './component/Teleport', link: '/source/vue3-api/teleport' },
-            { text: './component/Suspense', link: '/source/vue3-api/suspense' }
+            { text: './component/Suspense', link: '/source/vue3-api/suspense' },
             // { text: './apiComputed', link: '/source/vue3-api/apiComputed' },
             // { text: './apiWatch', link: '/source/vue3-api/apiWatch' }
+            { text: 'useTemplateRef', link: '/source/vue3-api/useTemplateRef' }
           ]
         },
         {
